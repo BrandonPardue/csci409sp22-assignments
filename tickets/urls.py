@@ -5,7 +5,7 @@ urlpatterns = [
 
     path('/', views.index),
 
-    path('/<int:confirmation_number>', views.ticket_search),
+    # path('/<int:confirmation_number>', views.ticket_search),
 
     path('search/', views.search),
 
