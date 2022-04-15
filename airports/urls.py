@@ -7,13 +7,13 @@ from . import views
 urlpatterns = [
     # Get index view
     # Example url: /airports/
-    path('/', views.index),
+    path('', views.index),
     # Show Airport info
     # Example url /airports/MYR
     # Notice: the airport_code parameter in the url matches
     #   the parameter in the airport_info function
 
-    path('/<str:airport_code>', views.airport_info),
+    path('<str:airport_code>', views.airport_info),
 
 
 
